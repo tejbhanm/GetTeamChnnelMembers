@@ -4,8 +4,8 @@ Install-Module -Name Teams -Force -AllowClobber
 
 Connect-MicrosoftTeams
 
-$TeamName = "Weir - WBS Transition 2023/2024"
-$ChannelName = "1 - Wave ONE"
+$TeamName = "Team Name"
+$ChannelName = "Channel Name"
 
 $Team = Get-Team -DisplayName $TeamName 
 $TeamId = $Team.GroupId
