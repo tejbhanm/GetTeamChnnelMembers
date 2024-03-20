@@ -10,4 +10,4 @@ $ChannelName = "Channel Name"
 $Team = Get-Team -DisplayName $TeamName 
 $TeamId = $Team.GroupId
 $Members = Get-TeamChannelUser -GroupId $TeamId  -DisplayName $ChannelName
-$Members | Export-Csv -Path "ChannelMembers.csv" -NoTypeInformation
+$Members | Export-Csv -Path "$ChannelName+.csv" -NoTypeInformation
